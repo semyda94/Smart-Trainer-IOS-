@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4516B990A4408814BFC5097 /* Pods_Smart_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14D1B8A8C0A10B1BADF52FD /* Pods_Smart_Trainer.framework */; };
+		C218758B20F0CFCF0007E883 /* RealmDatabaseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C218758A20F0CFCF0007E883 /* RealmDatabaseObjects.swift */; };
 		C28DE47120EE035600EDEB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE47020EE035600EDEB51 /* AppDelegate.swift */; };
 		C28DE47320EE035600EDEB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE47220EE035600EDEB51 /* ViewController.swift */; };
 		C28DE47620EE035600EDEB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28DE47420EE035600EDEB51 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		80877FF3A61F2D98508E257F /* Pods-Smart Trainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Trainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer.release.xcconfig"; sourceTree = "<group>"; };
 		A59DA7D2732FF89851EA9FFC /* Pods-Smart Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Trainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer.debug.xcconfig"; sourceTree = "<group>"; };
+		C218758A20F0CFCF0007E883 /* RealmDatabaseObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseObjects.swift; sourceTree = "<group>"; };
 		C28DE46D20EE035600EDEB51 /* Smart Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28DE47020EE035600EDEB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28DE47220EE035600EDEB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C218758C20F0D08E0007E883 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C218758A20F0CFCF0007E883 /* RealmDatabaseObjects.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C28DE46420EE035600EDEB51 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 				C28DE47720EE035800EDEB51 /* Assets.xcassets */,
 				C28DE47920EE035800EDEB51 /* LaunchScreen.storyboard */,
 				C28DE47C20EE035800EDEB51 /* Info.plist */,
+				C218758C20F0D08E0007E883 /* Model */,
 			);
 			path = "Smart Trainer";
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28DE47320EE035600EDEB51 /* ViewController.swift in Sources */,
+				C218758B20F0CFCF0007E883 /* RealmDatabaseObjects.swift in Sources */,
 				C28DE48320EE052300EDEB51 /* PCFViewController.swift in Sources */,
 				C28DE47120EE035600EDEB51 /* AppDelegate.swift in Sources */,
 			);
