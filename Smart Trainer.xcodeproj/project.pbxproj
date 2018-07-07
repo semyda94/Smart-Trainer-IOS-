@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4516B990A4408814BFC5097 /* Pods_Smart_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14D1B8A8C0A10B1BADF52FD /* Pods_Smart_Trainer.framework */; };
 		C28DE47120EE035600EDEB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE47020EE035600EDEB51 /* AppDelegate.swift */; };
 		C28DE47320EE035600EDEB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE47220EE035600EDEB51 /* ViewController.swift */; };
 		C28DE47620EE035600EDEB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28DE47420EE035600EDEB51 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80877FF3A61F2D98508E257F /* Pods-Smart Trainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Trainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer.release.xcconfig"; sourceTree = "<group>"; };
+		A59DA7D2732FF89851EA9FFC /* Pods-Smart Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Trainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer.debug.xcconfig"; sourceTree = "<group>"; };
 		C28DE46D20EE035600EDEB51 /* Smart Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28DE47020EE035600EDEB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28DE47220EE035600EDEB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C28DE47A20EE035800EDEB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C28DE47C20EE035800EDEB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28DE48220EE052300EDEB51 /* PCFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCFViewController.swift; sourceTree = "<group>"; };
+		F14D1B8A8C0A10B1BADF52FD /* Pods_Smart_Trainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Trainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4516B990A4408814BFC5097 /* Pods_Smart_Trainer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26E4C4E01C73366CC525BEC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A59DA7D2732FF89851EA9FFC /* Pods-Smart Trainer.debug.xcconfig */,
+				80877FF3A61F2D98508E257F /* Pods-Smart Trainer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDC8B68D61B9A5F87D3E22D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F14D1B8A8C0A10B1BADF52FD /* Pods_Smart_Trainer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C28DE46420EE035600EDEB51 = {
 			isa = PBXGroup;
 			children = (
 				C28DE46F20EE035600EDEB51 /* Smart Trainer */,
 				C28DE46E20EE035600EDEB51 /* Products */,
+				26E4C4E01C73366CC525BEC5 /* Pods */,
+				BDC8B68D61B9A5F87D3E22D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C28DE47F20EE035800EDEB51 /* Build configuration list for PBXNativeTarget "Smart Trainer" */;
 			buildPhases = (
+				39AF64D414B6709302301603 /* [CP] Check Pods Manifest.lock */,
 				C28DE46920EE035600EDEB51 /* Sources */,
 				C28DE46A20EE035600EDEB51 /* Frameworks */,
 				C28DE46B20EE035600EDEB51 /* Resources */,
+				DEAED0BFBA057C11E4896F49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39AF64D414B6709302301603 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smart Trainer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEAED0BFBA057C11E4896F49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C28DE46920EE035600EDEB51 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		C28DE48020EE035800EDEB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59DA7D2732FF89851EA9FFC /* Pods-Smart Trainer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		C28DE48120EE035800EDEB51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80877FF3A61F2D98508E257F /* Pods-Smart Trainer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
