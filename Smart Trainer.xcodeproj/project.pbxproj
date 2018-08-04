@@ -10,11 +10,11 @@
 		B4516B990A4408814BFC5097 /* Pods_Smart_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14D1B8A8C0A10B1BADF52FD /* Pods_Smart_Trainer.framework */; };
 		C218758B20F0CFCF0007E883 /* RealmDatabaseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C218758A20F0CFCF0007E883 /* RealmDatabaseObjects.swift */; };
 		C28DE47120EE035600EDEB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE47020EE035600EDEB51 /* AppDelegate.swift */; };
-		C28DE47320EE035600EDEB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE47220EE035600EDEB51 /* ViewController.swift */; };
 		C28DE47620EE035600EDEB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28DE47420EE035600EDEB51 /* Main.storyboard */; };
 		C28DE47820EE035800EDEB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28DE47720EE035800EDEB51 /* Assets.xcassets */; };
 		C28DE47B20EE035800EDEB51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28DE47920EE035800EDEB51 /* LaunchScreen.storyboard */; };
 		C28DE48320EE052300EDEB51 /* PCFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE48220EE052300EDEB51 /* PCFViewController.swift */; };
+		C2A591D7211521340039BFD9 /* SelectableButtonWithID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A591D6211521340039BFD9 /* SelectableButtonWithID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +23,12 @@
 		C218758A20F0CFCF0007E883 /* RealmDatabaseObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseObjects.swift; sourceTree = "<group>"; };
 		C28DE46D20EE035600EDEB51 /* Smart Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28DE47020EE035600EDEB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C28DE47220EE035600EDEB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C28DE47520EE035600EDEB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C28DE47720EE035800EDEB51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28DE47A20EE035800EDEB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C28DE47C20EE035800EDEB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28DE48220EE052300EDEB51 /* PCFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCFViewController.swift; sourceTree = "<group>"; };
+		C2A591D6211521340039BFD9 /* SelectableButtonWithID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectableButtonWithID.swift; path = "Smart Trainer/SelectableButtonWithID.swift"; sourceTree = SOURCE_ROOT; };
 		F14D1B8A8C0A10B1BADF52FD /* Pods_Smart_Trainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Trainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,15 +91,31 @@
 			isa = PBXGroup;
 			children = (
 				C28DE47020EE035600EDEB51 /* AppDelegate.swift */,
-				C28DE47220EE035600EDEB51 /* ViewController.swift */,
 				C28DE47420EE035600EDEB51 /* Main.storyboard */,
-				C28DE48220EE052300EDEB51 /* PCFViewController.swift */,
 				C28DE47720EE035800EDEB51 /* Assets.xcassets */,
 				C28DE47920EE035800EDEB51 /* LaunchScreen.storyboard */,
 				C28DE47C20EE035800EDEB51 /* Info.plist */,
-				C218758C20F0D08E0007E883 /* Model */,
+				C2A591D6211521340039BFD9 /* SelectableButtonWithID.swift */,
+				C2A591D5211520F50039BFD9 /* MVC */,
 			);
 			path = "Smart Trainer";
+			sourceTree = "<group>";
+		};
+		C2A591D4211520DE0039BFD9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C28DE48220EE052300EDEB51 /* PCFViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C2A591D5211520F50039BFD9 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				C2A591D4211520DE0039BFD9 /* Controllers */,
+				C218758C20F0D08E0007E883 /* Model */,
+			);
+			path = MVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28DE47320EE035600EDEB51 /* ViewController.swift in Sources */,
+				C2A591D7211521340039BFD9 /* SelectableButtonWithID.swift in Sources */,
 				C218758B20F0CFCF0007E883 /* RealmDatabaseObjects.swift in Sources */,
 				C28DE48320EE052300EDEB51 /* PCFViewController.swift in Sources */,
 				C28DE47120EE035600EDEB51 /* AppDelegate.swift in Sources */,

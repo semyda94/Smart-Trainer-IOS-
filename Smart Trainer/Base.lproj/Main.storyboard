@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Nutrition-->
+        <!--CPF-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PCFViewController" customModule="Smart_Trainer" customModuleProvider="target" sceneMemberID="viewController">
@@ -88,34 +88,211 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ysB-NG-eQT">
+                                <rect key="frame" x="10" y="218.33333333333334" width="355" height="89.333333333333343"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="noU-k5-fAA">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="40.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G5-y5-BcF">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnc-6V-r31">
+                                                <rect key="frame" x="0.0" y="20.333333333333314" width="355" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-Cj-bIi">
+                                        <rect key="frame" x="0.0" y="48.666666666666657" width="355" height="40.666666666666657"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MVt-H1-QM0">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="40.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38D-8Z-v8m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-jj-Tvg">
+                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="113" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IUK-sM-pRq">
+                                                <rect key="frame" x="121" y="0.0" width="113" height="40.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ht-I9-ZBw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-cM-Rvu">
+                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="113" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gEw-or-7XB">
+                                                <rect key="frame" x="242" y="0.0" width="113" height="40.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3s-w7-f3E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-rW-RTC">
+                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="113" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FGp-dt-KiH">
+                                <rect key="frame" x="10" y="317.66666666666669" width="355" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52m-46-5DH" customClass="SelectableButtonWithID" customModule="Smart_Trainer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="30"/>
+                                        <state key="normal" title="Cutting"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Cutting"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectedOrChangedMealPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CyX-yj-Kbu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fne-Yo-xqO" customClass="SelectableButtonWithID" customModule="Smart_Trainer" customModuleProvider="target">
+                                        <rect key="frame" x="118.33333333333334" y="0.0" width="118.33333333333334" height="30"/>
+                                        <state key="normal" title="Maintenance"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="selceted" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectedOrChangedMealPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yu4-hB-05Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfn-Kb-DKi" customClass="SelectableButtonWithID" customModule="Smart_Trainer" customModuleProvider="target">
+                                        <rect key="frame" x="236.66666666666666" y="0.0" width="118.33333333333334" height="30"/>
+                                        <state key="normal" title="Bulking"/>
+                                        <connections>
+                                            <action selector="selectedOrChangedMealPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRL-Uy-2RO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ID7-nQ-Pj2">
+                                <rect key="frame" x="10" y="357.66666666666669" width="355" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfB-Vt-7Sh" customClass="SelectableButtonWithID" customModule="Smart_Trainer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.33333333333333" height="30"/>
+                                        <state key="normal" title="Lower Carb"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="Cutting"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectedOrChangedMealPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPa-cv-fsV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQ8-BO-7UJ" customClass="SelectableButtonWithID" customModule="Smart_Trainer" customModuleProvider="target">
+                                        <rect key="frame" x="118.33333333333334" y="0.0" width="118.33333333333334" height="30"/>
+                                        <state key="normal" title="Moderate"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="selceted" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectedOrChangedMealPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAb-Wu-10b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP5-CD-dW6" customClass="SelectableButtonWithID" customModule="Smart_Trainer" customModuleProvider="target">
+                                        <rect key="frame" x="236.66666666666666" y="0.0" width="118.33333333333334" height="30"/>
+                                        <state key="normal" title="Higher Carb"/>
+                                        <connections>
+                                            <action selector="selectedOrChangedMealPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pR-j8-0dp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bqY-Ha-8pk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AM7-W3-Ef8"/>
+                            <constraint firstItem="FGp-dt-KiH" firstAttribute="top" secondItem="ysB-NG-eQT" secondAttribute="bottom" constant="10" id="Aek-DW-eNA"/>
                             <constraint firstItem="Do2-cd-Lno" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="IZ9-7K-ZTk"/>
+                            <constraint firstItem="ID7-nQ-Pj2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ORi-tZ-XOk"/>
+                            <constraint firstItem="FGp-dt-KiH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QBU-Hv-QUb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Do2-cd-Lno" secondAttribute="trailing" constant="10" id="ROn-OM-Scu"/>
+                            <constraint firstItem="ID7-nQ-Pj2" firstAttribute="top" secondItem="FGp-dt-KiH" secondAttribute="bottom" constant="10" id="WWc-9f-eFP"/>
                             <constraint firstItem="bqY-Ha-8pk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="XSS-0u-hAf"/>
                             <constraint firstItem="FaS-LD-lnL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="efc-on-aRz"/>
                             <constraint firstItem="bqY-Ha-8pk" firstAttribute="top" secondItem="FaS-LD-lnL" secondAttribute="bottom" constant="10" id="fSJ-jx-Psp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FaS-LD-lnL" secondAttribute="trailing" constant="20" id="gb7-5X-dFE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ID7-nQ-Pj2" secondAttribute="trailing" constant="10" id="hzG-UC-rMt"/>
+                            <constraint firstItem="ysB-NG-eQT" firstAttribute="top" secondItem="zyB-Rv-tvF" secondAttribute="bottom" constant="20" id="jFo-cF-XhJ"/>
                             <constraint firstItem="FaS-LD-lnL" firstAttribute="top" secondItem="Do2-cd-Lno" secondAttribute="bottom" constant="20" id="jxo-2f-F8m"/>
+                            <constraint firstItem="ysB-NG-eQT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kUR-uS-fWF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bqY-Ha-8pk" secondAttribute="trailing" constant="40" id="nkF-Fp-LjX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FGp-dt-KiH" secondAttribute="trailing" constant="10" id="s9C-uh-aQn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y1q-Qv-niI" secondAttribute="bottom" constant="20" id="sm9-qz-YCQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ysB-NG-eQT" secondAttribute="trailing" constant="10" id="u8s-J3-kf5"/>
                             <constraint firstItem="Y1q-Qv-niI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="utx-wG-t6u"/>
                             <constraint firstItem="Do2-cd-Lno" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wnc-5B-pIG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Nutrition" id="zeT-yA-8G1"/>
+                    <tabBarItem key="tabBarItem" title="CPF" id="zeT-yA-8G1"/>
                     <connections>
                         <outlet property="ageField" destination="zyB-Rv-tvF" id="hDV-2F-ETW"/>
+                        <outlet property="bulkingButton" destination="Sfn-Kb-DKi" id="RhD-ij-1Qu"/>
+                        <outlet property="caloriesLabel" destination="dnc-6V-r31" id="7hi-iU-BEq"/>
+                        <outlet property="carbsLabel" destination="cLd-cM-Rvu" id="BUZ-KW-lsQ"/>
+                        <outlet property="cuttingButton" destination="52m-46-5DH" id="JGi-47-5rr"/>
+                        <outlet property="fatLabel" destination="ZTF-rW-RTC" id="ZwH-e3-X2F"/>
                         <outlet property="heightField" destination="J0d-Mz-eu8" id="Sm9-pg-rnb"/>
+                        <outlet property="higherCarbButton" destination="HP5-CD-dW6" id="o0f-Cq-OfK"/>
+                        <outlet property="lowerCarbButton" destination="yfB-Vt-7Sh" id="Z5z-Li-ifN"/>
+                        <outlet property="maintenanceButton" destination="fne-Yo-xqO" id="9sa-6e-B2x"/>
+                        <outlet property="moderateButton" destination="DQ8-BO-7UJ" id="n0D-bm-39b"/>
+                        <outlet property="proteinLabel" destination="Fkb-jj-Tvg" id="zcb-dd-ihS"/>
                         <outlet property="weightField" destination="pJX-x3-mni" id="Ygd-Bp-0bg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="863"/>
+            <point key="canvasLocation" x="1025" y="123"/>
+        </scene>
+        <!--Meals-->
+        <scene sceneID="86F-Xa-kZK">
+            <objects>
+                <viewController id="mxn-In-qJL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BOR-Ma-74b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gff-Hg-OFe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meals" id="9Xy-xo-HDV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfo-2F-deY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="864"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mIr-rL-CuO">
@@ -123,17 +300,19 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YVU-9U-WJR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="LnT-k2-Y8G">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="4mE-KX-1aI" kind="relationship" relationship="viewControllers" id="auH-7M-0Iw"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="YAT-bO-cgk"/>
+                        <segue destination="mxn-In-qJL" kind="relationship" relationship="viewControllers" id="jPs-1Z-arA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJ5-IB-qro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="122.66009852216749"/>
+            <point key="canvasLocation" x="242" y="123"/>
         </scene>
         <!--Training-->
         <scene sceneID="Pba-hZ-JGh">
@@ -149,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJ2-DH-Wh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="123"/>
+            <point key="canvasLocation" x="1836" y="-618"/>
         </scene>
         <!--Training-->
         <scene sceneID="pVa-4L-L5f">
@@ -168,7 +347,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GV1-Nq-uEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="123"/>
+            <point key="canvasLocation" x="1025" y="-618"/>
         </scene>
     </scenes>
 </document>
