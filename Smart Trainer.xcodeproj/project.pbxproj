@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		B4516B990A4408814BFC5097 /* Pods_Smart_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14D1B8A8C0A10B1BADF52FD /* Pods_Smart_Trainer.framework */; };
 		C218758B20F0CFCF0007E883 /* RealmDatabaseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C218758A20F0CFCF0007E883 /* RealmDatabaseObjects.swift */; };
+		C222E52D2120121B003F5418 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222E52C2120121B003F5418 /* MealsViewController.swift */; };
+		C222E52F21201518003F5418 /* NewMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222E52E21201518003F5418 /* NewMealViewController.swift */; };
+		C222E53121201871003F5418 /* MealProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222E53021201871003F5418 /* MealProductTableViewCell.swift */; };
+		C25277BF21213E9800C1E1D2 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25277BE21213E9800C1E1D2 /* MealTableViewCell.swift */; };
 		C28DE47120EE035600EDEB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28DE47020EE035600EDEB51 /* AppDelegate.swift */; };
 		C28DE47620EE035600EDEB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28DE47420EE035600EDEB51 /* Main.storyboard */; };
 		C28DE47820EE035800EDEB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28DE47720EE035800EDEB51 /* Assets.xcassets */; };
@@ -21,6 +25,10 @@
 		80877FF3A61F2D98508E257F /* Pods-Smart Trainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Trainer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer.release.xcconfig"; sourceTree = "<group>"; };
 		A59DA7D2732FF89851EA9FFC /* Pods-Smart Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart Trainer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smart Trainer/Pods-Smart Trainer.debug.xcconfig"; sourceTree = "<group>"; };
 		C218758A20F0CFCF0007E883 /* RealmDatabaseObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseObjects.swift; sourceTree = "<group>"; };
+		C222E52C2120121B003F5418 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		C222E52E21201518003F5418 /* NewMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealViewController.swift; sourceTree = "<group>"; };
+		C222E53021201871003F5418 /* MealProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealProductTableViewCell.swift; sourceTree = "<group>"; };
+		C25277BE21213E9800C1E1D2 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		C28DE46D20EE035600EDEB51 /* Smart Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28DE47020EE035600EDEB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28DE47520EE035600EDEB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +77,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C25277C021213EA100C1E1D2 /* MealsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C222E52C2120121B003F5418 /* MealsViewController.swift */,
+				C25277BE21213E9800C1E1D2 /* MealTableViewCell.swift */,
+			);
+			path = MealsControllers;
+			sourceTree = "<group>";
+		};
 		C28DE46420EE035600EDEB51 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +121,9 @@
 		C2A591D4211520DE0039BFD9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C25277C021213EA100C1E1D2 /* MealsControllers */,
+				C222E52E21201518003F5418 /* NewMealViewController.swift */,
+				C222E53021201871003F5418 /* MealProductTableViewCell.swift */,
 				C28DE48220EE052300EDEB51 /* PCFViewController.swift */,
 			);
 			path = Controllers;
@@ -234,9 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C222E52F21201518003F5418 /* NewMealViewController.swift in Sources */,
 				C2A591D7211521340039BFD9 /* SelectableButtonWithID.swift in Sources */,
 				C218758B20F0CFCF0007E883 /* RealmDatabaseObjects.swift in Sources */,
+				C222E52D2120121B003F5418 /* MealsViewController.swift in Sources */,
+				C25277BF21213E9800C1E1D2 /* MealTableViewCell.swift in Sources */,
 				C28DE48320EE052300EDEB51 /* PCFViewController.swift in Sources */,
+				C222E53121201871003F5418 /* MealProductTableViewCell.swift in Sources */,
 				C28DE47120EE035600EDEB51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,3 +24,11 @@ class RealmUserInfo: Object {
     // if gender seted false than sex is male otherwise female
     @objc dynamic var gender = false
 }
+
+class RealmMealInfo: Object {
+    
+    @objc dynamic var mealID = 0
+    
+    @objc dynamic var mealDateAndTime = Date()
+    
+}

@@ -10,7 +10,7 @@ import UIKit
 
 class SelectableButtonWithID: UIButton {
     
-    public var mealPlanType : dietPlans?
+    public var mealPlanType : mealPlans?
     
     @IBInspectable
     public var selceted : Bool = false
